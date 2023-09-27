@@ -13,7 +13,7 @@ export const LeftSideContainer = styled.div`
   }
 `;
 
-export const RightSideContainer = styled.div`
+export const RightSideContainer = styled.form`
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -23,21 +23,6 @@ export const RightSideContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0.5rem;
-
-    input {
-      background: rgba(255, 255, 255, 0.25);
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-      backdrop-filter: blur(4px);
-      -webkit-backdrop-filter: blur(4px);
-      border-radius: 5px;
-      border: 1px solid #fff;
-      padding: 1em;
-      color: #fff;
-      font-weight: 300;
-      &::placeholder {
-        color: #fff;
-      }
-    }
   }
   textarea {
     background: rgba(255, 255, 255, 0.25);
@@ -54,6 +39,22 @@ export const RightSideContainer = styled.div`
     &::placeholder {
       color: #fff;
     }
+  }
+`;
+
+export const Input = styled.input`
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 5px;
+  border: 1px solid #fff;
+  padding: 1em;
+  color: #fff;
+  font-weight: 300;
+  cursor: pointer;
+  &::placeholder {
+    color: #fff;
   }
 `;
 
