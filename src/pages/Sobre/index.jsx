@@ -13,8 +13,7 @@ import { AnimationType } from "../../components/AnimationType/aboutIndex";
 import { skills } from "../../utils/Data";
 import { FadeImg } from "../../styles/globalStyles";
 import { Navbar } from "../../components/NavBar";
-import { fadeInLeftVariant, fadeInRightVariant } from "../../utils/Variants";
-import RightFadeImg from "../../assets/right.png";
+import { fadeInRightVariant } from "../../utils/Variants";
 import LeftFadeImg from "../../assets/left.png";
 
 export function Sobre() {

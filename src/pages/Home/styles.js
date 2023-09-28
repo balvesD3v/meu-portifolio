@@ -73,7 +73,7 @@ export const ShowcaseParticleContainer = styled.div`
 
 export const ShowcaseImageCard = styled.div`
   img {
-    border-radius: 2em 5em;
+    border-radius: 50%;
     border: 5px solid ${({ theme }) => theme.THEME.primaryColor};
   }
 `;

@@ -37,7 +37,7 @@ export const RightSideContainer = styled.form`
     font-weight: 300;
 
     &::placeholder {
-      color: #fff;
+      color: #ccc;
     }
   }
 `;
@@ -54,7 +54,7 @@ export const Input = styled.input`
   font-weight: 300;
   cursor: pointer;
   &::placeholder {
-    color: #fff;
+    color: #ccc;
   }
 `;
 
@@ -87,4 +87,11 @@ export const LetsTalk = styled.div`
   span {
     color: ${({ theme }) => theme.THEME.primaryColor};
   }
+`;
+
+export const SocialWebIcons = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 20em;
+  gap: 2em;
 `;

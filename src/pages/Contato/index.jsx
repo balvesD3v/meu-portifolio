@@ -7,13 +7,15 @@ import {
   Button,
   Input,
   LetsTalk,
+  SocialWebIcons,
 } from "./styles";
-import contactSvg from "../../assets/undraw_programming_re_kg9v.svg";
 import { FadeImg } from "../../styles/globalStyles";
 import { Navbar } from "../../components/NavBar";
 import { fadeInLeftVariant, fadeInRightVariant } from "../../utils/Variants";
 import { AnimationType } from "../../components/AnimationType/contacIndex";
 import emailjs from "@emailjs/browser";
+import { WebIconText } from "../../components/WebIconText";
+import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
 
 import TopFadeImg from "../../assets/top.png";
 
@@ -62,9 +64,27 @@ export function Contato() {
               Sinta-se a vontade para mandar qualquer mensagem, ficarei grato em
               lhe responder
             </p>
+            <SocialWebIcons>
+              <WebIconText
+                icon={FaLinkedin}
+                socialWebName={"Linkedin"}
+                socialWebNickName={"Luiz Paulo Barbosa"}
+                path={"https://www.linkedin.com/in/paulobarbosacode/"}
+              />
+              <WebIconText
+                icon={FaGithub}
+                socialWebName={"GitHub"}
+                socialWebNickName={"Paulo Barbosa"}
+                path={"https://github.com/BarveraDev"}
+              />
+              <WebIconText
+                icon={FaWhatsapp}
+                socialWebName={"WhatsApp"}
+                socialWebNickName={"(84) 99161-5970"}
+                path={"https://encurtador.com.br/giKX0"}
+              />
+            </SocialWebIcons>
           </LetsTalk>
-
-          <img src={contactSvg} alt="" />
         </LeftSideContainer>
         <RightSideContainer
           as={motion.form}

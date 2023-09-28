@@ -82,7 +82,7 @@ export function Home() {
             Procurando sempre me superar e me tornar a minha melhor versão.
             <p> Aliás, pode brincar com os triângulos</p>
           </MyDescription>
-          <LetsTalk>
+          <LetsTalk to={"/contato"}>
             Vamos conversar?
             <FaArrowRight />
           </LetsTalk>
@@ -90,9 +90,13 @@ export function Home() {
 
         <ShowcaseParticleContainer
           as={motion.div}
-          variants={fadeInRightVariant}
-          initial="hidden"
-          whileInView="visible"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.8,
+            delay: 0.5,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
         >
           <ShowcaseImageCard>
             <img
