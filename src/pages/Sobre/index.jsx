@@ -6,39 +6,69 @@ import {
   ContainerInfo,
   AboutMe,
   AnimatedAbout,
-  SkillCard,
-  IconContainer,
 } from "./styles";
 import { AnimationType } from "../../components/AnimationType/aboutIndex";
-import { skills } from "../../utils/Data";
 import { FadeImg } from "../../styles/globalStyles";
 import { Navbar } from "../../components/NavBar";
 import { fadeInRightVariant } from "../../utils/Variants";
 import LeftFadeImg from "../../assets/left.png";
+import { TechCards } from "../../components/TechCards";
+import { FaReact, FaJs, FaNodeJs } from "react-icons/fa";
+import { SiStyledcomponents } from "react-icons/si";
 
 export function Sobre() {
   return (
     <div>
       <Navbar />
       <Container>
-        <SkillsTechs
-          as={motion.div}
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 0.8,
-            delay: 0.5,
-            ease: [0, 0.71, 0.2, 1.01],
-          }}
-        >
-          {skills.map((skill, index) => {
-            return (
-              <SkillCard key={index}>
-                <IconContainer>{skill.icon}</IconContainer>
-                <h4>{skill.tech}</h4>
-              </SkillCard>
-            );
-          })}
+        <SkillsTechs>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 1,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+          >
+            <TechCards icon={FaReact} techName={"ReactJS"} />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 1.5,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+          >
+            <TechCards icon={FaJs} techName={"JavaScript"} />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 2,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+          >
+            <TechCards icon={FaNodeJs} techName={"NodeJS"} />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 2.5,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+          >
+            <TechCards
+              icon={SiStyledcomponents}
+              techName={"Styled-Components"}
+            />
+          </motion.div>
         </SkillsTechs>
         <ContainerInfo
           as={motion.div}

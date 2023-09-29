@@ -101,7 +101,7 @@ export function Home() {
           <ShowcaseImageCard>
             <img
               src="https://avatars.githubusercontent.com/u/106263458?s=400&u=04a244fb08c5390440f5e47c88534b9069e16228&v=4"
-              alt=""
+              alt="Minha foto de perfil do github"
             />
           </ShowcaseImageCard>
           <Particle

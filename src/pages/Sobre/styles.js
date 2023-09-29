@@ -12,7 +12,7 @@ export const SkillsTechs = styled.div`
   display: grid;
   grid-template-columns: auto auto;
   grid-gap: 2rem;
-  padding: 0 5%;
+  padding: 0 0;
 `;
 
 export const SkillCard = styled.div`
@@ -29,7 +29,6 @@ export const SkillCard = styled.div`
     font-weight: 300;
   }
 `;
-
 export const ContainerInfo = styled.div`
   width: 50%;
 `;
@@ -48,12 +47,4 @@ export const AnimatedAbout = styled.p`
   span {
     color: ${({ theme }) => theme.THEME.primaryColor};
   }
-`;
-
-export const IconContainer = styled.div`
-  svg {
-    width: 5rem;
-    height: 5rem;
-  }
-  color: ${({ theme }) => theme.THEME.primaryColor};
 `;
