@@ -2,7 +2,7 @@ import { TypeAnimation } from "react-type-animation";
 import styled from "styled-components";
 
 export const Container = styled.span`
-  @media (min-width: 768px) and (max-width: 1440px) {
+  @media (min-width: 768px) {
     font-size: 31px;
     width: 8em;
   }

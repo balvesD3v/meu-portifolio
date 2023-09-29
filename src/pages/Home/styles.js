@@ -28,7 +28,7 @@ export const ProfileContainer = styled.div`
       font-size: 25px;
     }
 
-    @media (min-width: 768px) and (max-width: 1440px) {
+    @media (min-width: 768px) {
       width: 8em;
     }
   }
@@ -47,7 +47,7 @@ export const IamDeveloper = styled.p`
     font-size: 15px;
   }
 
-  @media (min-width: 768px) and (max-width: 1440px) {
+  @media (min-width: 768px) {
     font-size: 31px;
     width: 8em;
   }
@@ -73,7 +73,7 @@ export const MyDescription = styled.p`
     font-size: 22px;
   }
 
-  @media (min-width: 768px) and (max-width: 1440px) {
+  @media (min-width: 768px) {
     width: 20em;
     font-size: 31px;
   }
