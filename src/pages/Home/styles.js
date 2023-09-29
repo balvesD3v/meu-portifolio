@@ -9,7 +9,7 @@ export const ContentContainer = styled.div`
   min-height: calc(100vh - 5em);
   align-items: center;
 
-  @media (max-width: 1080px) {
+  @media (max-width: 768px) {
     .fadeimg {
       display: none;
     }
@@ -23,7 +23,7 @@ export const ProfileContainer = styled.div`
     font-size: 50px;
     cursor: default;
 
-    @media (max-width: 1080px) {
+    @media (max-width: 768px) {
       width: 10em;
       font-size: 25px;
     }
@@ -38,14 +38,9 @@ export const IamDeveloper = styled.p`
   font-weight: 300;
   line-height: normal;
 
-  @media (max-width: 1080px) {
+  @media (max-width: 768px) {
     width: 10em;
     font-size: 15px;
-  }
-
-  @media (max-width: 1080px) {
-    font-size: 31px;
-    width: 8em;
   }
 
   span {
@@ -64,14 +59,9 @@ export const MyDescription = styled.p`
   margin-bottom: 2em;
   margin-top: 1em;
 
-  @media (max-width: 1080px) {
+  @media (max-width: 768px) {
     width: 16em;
     font-size: 22px;
-  }
-
-  @media (min-width: 768px) {
-    width: 25em;
-    font-size: 25px;
   }
 `;
 
@@ -98,7 +88,7 @@ export const LetsTalk = styled(Link)`
     background-color: #1d84b5;
   }
 
-  @media (max-width: 1080px) {
+  @media (max-width: 768px) {
     width: 18em;
     font-size: 10px;
   }
@@ -108,7 +98,7 @@ export const ShowcaseParticleContainer = styled.div`
   position: relative;
   margin-right: 5em;
 
-  @media (min-width: 390px) and (max-width: 768px) {
+  @media (max-width: 768px) {
     display: none;
   }
 `;
