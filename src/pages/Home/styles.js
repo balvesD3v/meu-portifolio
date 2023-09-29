@@ -26,7 +26,6 @@ export const ProfileContainer = styled.div`
     @media (max-width: 1080px) {
       width: 10em;
       font-size: 25px;
-      background-color: red;
     }
   }
 `;
