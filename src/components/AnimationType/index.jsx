@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Container = styled.span`
   @media (max-width: 768px) {
-    font-size: 15px;
+    font-size: 25px;
   }
 `;
 

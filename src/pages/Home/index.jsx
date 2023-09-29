@@ -202,7 +202,22 @@ export function Home() {
             duration: 10,
             repeat: Infinity,
           }}
-          className="fadeimg"
+          className="fadeimgTop"
+        />
+        <FadeImg
+          src={LeftFadeImg}
+          top={0}
+          left={0}
+          as={motion.img}
+          animate={{
+            y: [0, 0, 0],
+            x: [0, 0, 0],
+          }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+          }}
+          className="fadeimgRight"
         />
       </ContentContainer>
     </motion.div>

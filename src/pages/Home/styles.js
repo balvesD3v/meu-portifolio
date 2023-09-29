@@ -4,14 +4,22 @@ import styled from "styled-components";
 export const ContentContainer = styled.div`
   display: flex;
   padding: 2em;
-  justify-content: space-between;
+  justify-content: space-around;
+  overflow: hidden;
 
   min-height: calc(100vh - 5em);
   align-items: center;
 
+  .fadeimgRight {
+    max-width: 100%;
+    height: auto;
+  }
+
   @media (max-width: 768px) {
-    .fadeimg {
+    justify-content: space-between;
+    .fadeimgTop {
       display: none;
+      height: 50em;
     }
   }
 `;
@@ -40,7 +48,7 @@ export const IamDeveloper = styled.p`
 
   @media (max-width: 768px) {
     width: 10em;
-    font-size: 15px;
+    font-size: 25px;
   }
 
   span {
