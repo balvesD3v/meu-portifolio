@@ -74,8 +74,8 @@ export const MyDescription = styled.p`
   }
 
   @media (min-width: 768px) {
-    width: 20em;
-    font-size: 31px;
+    width: 25em;
+    font-size: 25px;
   }
 `;
 
