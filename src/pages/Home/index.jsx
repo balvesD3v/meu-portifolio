@@ -53,7 +53,7 @@ export function Home() {
   return (
     <motion.div>
       <Navbar />
-      <ContentContainer>
+      <ContentContainer className="content-container">
         <ProfileContainer
           as={motion.div}
           variants={fadeInLeftVariant}
@@ -191,31 +191,20 @@ export function Home() {
             rotate="50deg"
           />
         </ShowcaseParticleContainer>
+        <FadeImg
+          src={TopFadeImg}
+          top={0}
+          as={motion.img}
+          animate={{
+            x: [0, 500, 0],
+          }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+          }}
+          className="fadeimg"
+        />
       </ContentContainer>
-      <FadeImg
-        src={LeftFadeImg}
-        top={0}
-        as={motion.img}
-        animate={{
-          y: [-100, -300, -100],
-        }}
-        transition={{
-          duration: 8,
-          repeat: Infinity,
-        }}
-      />
-      <FadeImg
-        src={TopFadeImg}
-        top={0}
-        as={motion.img}
-        animate={{
-          x: [0, 500, 0],
-        }}
-        transition={{
-          duration: 10,
-          repeat: Infinity,
-        }}
-      />
     </motion.div>
   );
 }

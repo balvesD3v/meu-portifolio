@@ -8,10 +8,6 @@ export const NavbarContainer = styled.nav`
   display: flex;
   color: #fff;
   font-weight: 300;
-
-  @media (max-width: 768px) {
-    padding: 1rem;
-  }
 `;
 
 export const Brand = styled.div`
@@ -23,10 +19,6 @@ export const DesktopMenu = styled.ul`
   display: flex;
   list-style-type: none;
   gap: 1.5em;
-
-  @media (max-width: 768px) {
-    display: none;
-  }
 `;
 
 export const MobileMenuButton = styled.button`
@@ -36,10 +28,6 @@ export const MobileMenuButton = styled.button`
   cursor: pointer;
   color: #fff;
   display: none;
-
-  @media (max-width: 768px) {
-    display: block;
-  }
 `;
 
 export const MobileMenu = styled.div`
@@ -49,10 +37,6 @@ export const MobileMenu = styled.div`
   left: 0;
   width: 100%;
   padding: 1rem;
-
-  @media (max-width: 768px) {
-    display: block;
-  }
 `;
 
 export const MobileMenuItem = styled.li`
@@ -85,5 +69,9 @@ export const Links = styled(NavLink)`
 
   &.active {
     color: ${({ theme }) => theme.THEME.primaryColor};
+  }
+
+  @media (max-width: 768px) {
+    display: none;
   }
 `;

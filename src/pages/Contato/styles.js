@@ -52,7 +52,6 @@ export const Input = styled.input`
   padding: 1em;
   color: #fff;
   font-weight: 300;
-  cursor: pointer;
   &::placeholder {
     color: #ccc;
   }

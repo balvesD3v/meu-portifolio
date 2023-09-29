@@ -15,7 +15,12 @@ import { fadeInLeftVariant, fadeInRightVariant } from "../../utils/Variants";
 import { AnimationType } from "../../components/AnimationType/contacIndex";
 import emailjs from "@emailjs/browser";
 import { WebIconText } from "../../components/WebIconText";
-import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaGithub,
+  FaWhatsapp,
+  FaFileDownload,
+} from "react-icons/fa";
 
 import TopFadeImg from "../../assets/top.png";
 
@@ -82,6 +87,10 @@ export function Contato() {
                 socialWebName={"WhatsApp"}
                 socialWebNickName={"(84) 99161-5970"}
                 path={"https://encurtador.com.br/giKX0"}
+              />
+              <WebIconText
+                icon={FaFileDownload}
+                socialWebName={"Veja meu curriculo"}
               />
             </SocialWebIcons>
           </LetsTalk>

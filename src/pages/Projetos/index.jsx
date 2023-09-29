@@ -7,9 +7,9 @@ import {
   ImageContainer,
   ProjectInfo,
   TechStackCard,
-  Button,
   Title,
   Github,
+  ButtonStyled,
 } from "./styles";
 import { motion } from "framer-motion";
 import { AnimationType } from "../../components/AnimationType/skillsIndex";
@@ -21,6 +21,7 @@ import LeftFadeImg from "../../assets/left.png";
 import { FadeImg } from "../../styles/globalStyles";
 import { Navbar } from "../../components/NavBar";
 import { fadeInLeftVariant, fadeInRightVariant } from "../../utils/Variants";
+import { Button } from "../../components/Button";
 
 export function Projetos() {
   return (
@@ -63,9 +64,13 @@ export function Projetos() {
                       <TechStackCard key={index}>{stack}</TechStackCard>
                     ))}
                   </div>
-                  <Button to={project.projectUrl} target="_blank">
-                    Visitar site
-                  </Button>
+                  <ButtonStyled>
+                    <Button
+                      title={"Visitar site"}
+                      path={project.projectUrl}
+                      target={"_blank"}
+                    />
+                  </ButtonStyled>
                 </ProjectInfo>
                 <ImageContainer
                   key={project.id}

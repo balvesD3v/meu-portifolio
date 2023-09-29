@@ -1,6 +1,6 @@
 import { Carousel } from "react-responsive-carousel";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   display: flex;
@@ -70,25 +70,6 @@ export const ImageContainer = styled.div`
   }
 `;
 
-export const Button = styled(Link)`
-  width: 10em;
-  border: 2px solid #1d84b5;
-  display: flex;
-  justify-content: center;
-  color: #fff;
-  text-decoration: none;
-  padding: 1rem;
-  border-radius: 1em;
-  transition: all 0.1s ease-in;
-
-  &:hover {
-    transition: all 0.1s ease-in;
-    transform: scale(0.9);
-    background-color: #1d84b5;
-    cursor: pointer;
-  }
-`;
-
 export const Title = styled.div`
   display: flex;
   align-items: center;
@@ -101,4 +82,12 @@ export const Title = styled.div`
 export const Github = styled(Link)`
   color: #1d84b5;
   margin-left: 1rem;
+`;
+
+export const ButtonStyled = styled.div`
+  div {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
 `;

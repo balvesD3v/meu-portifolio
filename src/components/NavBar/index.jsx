@@ -11,15 +11,10 @@ import {
 import { FaBars } from "react-icons/fa";
 
 export const Navbar = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("");
 
   const setActive = (link) => {
     setActiveLink(link);
-  };
-
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!mobileMenuOpen);
   };
 
   return (
@@ -63,26 +58,6 @@ export const Navbar = () => {
           </Links>
         </li>
       </DesktopMenu>
-      <MobileMenuButton onClick={toggleMobileMenu}>
-        <FaBars />
-      </MobileMenuButton>
-      <MobileMenu open={mobileMenuOpen}>
-        <MobileMenuItem>
-          <Links href="#">Home</Links>
-        </MobileMenuItem>
-        <MobileMenuItem>
-          <Links href="#">Sobre Mim</Links>
-        </MobileMenuItem>
-        <MobileMenuItem>
-          <Links href="#">Habilidades</Links>
-        </MobileMenuItem>
-        <MobileMenuItem>
-          <Links href="#">Projetos</Links>
-        </MobileMenuItem>
-        <MobileMenuItem>
-          <Links href="#">Contato</Links>
-        </MobileMenuItem>
-      </MobileMenu>
     </NavbarContainer>
   );
 };

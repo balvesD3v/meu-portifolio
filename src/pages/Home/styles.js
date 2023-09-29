@@ -1,13 +1,19 @@
 import { Link } from "react-router-dom";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 export const ContentContainer = styled.div`
   display: flex;
   padding: 2em;
-  justify-content: space-around;
+  justify-content: space-between;
 
   min-height: calc(100vh - 5em);
   align-items: center;
+
+  @media (max-width: 768px) {
+    .fadeimg {
+      display: none;
+    }
+  }
 `;
 
 export const ProfileContainer = styled.div`
@@ -16,6 +22,12 @@ export const ProfileContainer = styled.div`
   h1 {
     font-size: 50px;
     cursor: default;
+
+    @media (max-width: 768px) {
+      margin-top: -8em;
+      width: 10em;
+      font-size: 25px;
+    }
   }
 `;
 
@@ -27,8 +39,14 @@ export const IamDeveloper = styled.p`
   font-weight: 300;
   line-height: normal;
 
+  @media (max-width: 768px) {
+    width: 10em;
+    font-size: 15px;
+  }
+
   span {
     color: ${({ theme }) => theme.THEME.primaryColor};
+    width: 1em;
   }
 `;
 
@@ -41,6 +59,11 @@ export const MyDescription = styled.p`
   line-height: normal;
   margin-bottom: 2em;
   margin-top: 1em;
+
+  @media (max-width: 768px) {
+    width: 15em;
+    font-size: 13px;
+  }
 `;
 
 export const LetsTalk = styled(Link)`
@@ -65,10 +88,20 @@ export const LetsTalk = styled(Link)`
     transform: scale(1.1);
     background-color: #1d84b5;
   }
+
+  @media (max-width: 768px) {
+    width: 18em;
+    font-size: 10px;
+  }
 `;
 
 export const ShowcaseParticleContainer = styled.div`
   position: relative;
+  margin-right: 5em;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const ShowcaseImageCard = styled.div`
