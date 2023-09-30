@@ -9,7 +9,6 @@ import {
 } from "./styles";
 import { AnimationType } from "../../components/AnimationType/aboutIndex";
 import { FadeImg } from "../../styles/globalStyles";
-import { Navbar } from "../../components/NavBar";
 import { fadeInRightVariant } from "../../utils/Variants";
 import LeftFadeImg from "../../assets/left.png";
 import { TechCards } from "../../components/TechCards";
@@ -19,7 +18,6 @@ import { SiStyledcomponents } from "react-icons/si";
 export function Sobre() {
   return (
     <div>
-      <Navbar />
       <Container>
         <SkillsTechs>
           <motion.div

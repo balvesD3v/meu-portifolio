@@ -1,63 +1,30 @@
-import React, { useState } from "react";
-import {
-  NavbarContainer,
-  Brand,
-  DesktopMenu,
-  MobileMenuButton,
-  MobileMenu,
-  MobileMenuItem,
-  Links,
-} from "./styles";
-import { FaBars } from "react-icons/fa";
+import "./styles.css";
+import { useRef } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-export const Navbar = () => {
-  const [activeLink, setActiveLink] = useState("");
+export function NavBar() {
+  const navRef = useRef();
 
-  const setActive = (link) => {
-    setActiveLink(link);
+  const showNavbar = () => {
+    navRef.current.classList.toggle("responsive_nav");
   };
 
   return (
-    <NavbarContainer>
-      <Brand>Balves.</Brand>
-      <DesktopMenu>
-        <li>
-          <Links
-            to={"/"}
-            className={activeLink === "home" ? "active" : ""}
-            onClick={() => setActive("home")}
-          >
-            Home
-          </Links>
-        </li>
-        <li>
-          <Links
-            to={"/sobre"}
-            className={activeLink === "sobre" ? "active" : ""}
-            onClick={() => setActive("sobre")}
-          >
-            Sobre Mim
-          </Links>
-        </li>
-        <li>
-          <Links
-            to={"/projetos"}
-            className={activeLink === "projetos" ? "active" : ""}
-            onClick={() => setActive("projetos")}
-          >
-            Projetos
-          </Links>
-        </li>
-        <li>
-          <Links
-            to={"/contato"}
-            className={activeLink === "contato" ? "active" : ""}
-            onClick={() => setActive("contato")}
-          >
-            Contato
-          </Links>
-        </li>
-      </DesktopMenu>
-    </NavbarContainer>
+    <header>
+      <h3>Balves.</h3>
+      <nav ref={navRef}>
+        <Link to="/">Home</Link>
+        <Link to="/sobre">Sobre Mim</Link>
+        <Link to="/projetos">Projetos</Link>
+        <Link to="/contato">Contato</Link>
+        <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+          <FaTimes />
+        </button>
+      </nav>
+      <button className="nav-btn" onClick={showNavbar}>
+        <FaBars />
+      </button>
+    </header>
   );
-};
+}

@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Container = styled.span`
   @media (max-width: 768px) {
-    font-size: 24px;
+    font-size: 25px;
   }
   @media (min-width: 768px) {
     font-size: 37px;

@@ -11,7 +11,6 @@ import {
   InputField,
 } from "./styles";
 import { FadeImg } from "../../styles/globalStyles";
-import { Navbar } from "../../components/NavBar";
 import { fadeInLeftVariant, fadeInRightVariant } from "../../utils/Variants";
 import { AnimationType } from "../../components/AnimationType/contacIndex";
 import emailjs from "@emailjs/browser";
@@ -51,7 +50,6 @@ export function Contato() {
 
   return (
     <motion.div>
-      <Navbar />
       <Container>
         <LeftSideContainer
           as={motion.div}
