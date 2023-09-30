@@ -10,6 +10,8 @@ import {
   Title,
   Github,
   ButtonStyled,
+  DescInfo,
+  TechContainer,
 } from "./styles";
 import { motion } from "framer-motion";
 import { AnimationType } from "../../components/AnimationType/skillsIndex";
@@ -58,12 +60,12 @@ export function Projetos() {
                       <FaGithub />
                     </Github>
                   </Title>
-                  <p>{project.projectDesc}</p>
-                  <div>
+                  <DescInfo>{project.projectDesc}</DescInfo>
+                  <TechContainer>
                     {project.techStacks.map((stack, index) => (
                       <TechStackCard key={index}>{stack}</TechStackCard>
                     ))}
-                  </div>
+                  </TechContainer>
                   <ButtonStyled>
                     <Button
                       title={"Visitar site"}

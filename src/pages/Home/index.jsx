@@ -79,7 +79,8 @@ export function Home() {
 
           <MyDescription>
             Sou um desenvolvedor frontEnd, e futuro desenvolvedor full-stack.
-            Procurando sempre me superar e me tornar a minha melhor versão.
+            Buscando a oportunidade que me for concedida e sempre procurando
+            superar-me e entregar o melhor.
             <p> Aliás, pode brincar com os triângulos</p>
           </MyDescription>
           <LetsTalk to={"/contato"}>

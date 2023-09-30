@@ -6,6 +6,11 @@ export const Container = styled.div`
   min-height: calc(100vh - 5em);
   align-items: center;
   justify-content: space-around;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const SkillsTechs = styled.div`
@@ -30,7 +35,8 @@ export const SkillCard = styled.div`
   }
 `;
 export const ContainerInfo = styled.div`
-  width: 50%;
+  width: 100%;
+  margin: 2em 4em;
 `;
 
 export const AboutMe = styled.span`
@@ -46,5 +52,9 @@ export const AnimatedAbout = styled.p`
   font-weight: 300;
   span {
     color: ${({ theme }) => theme.THEME.primaryColor};
+  }
+
+  @media (max-width: 768px) {
+    font-size: 25px;
   }
 `;

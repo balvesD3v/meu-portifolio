@@ -35,6 +35,10 @@ export const ProfileContainer = styled.div`
       width: 10em;
       font-size: 25px;
     }
+
+    @media (min-width: 768px) {
+      font-size: 64px;
+    }
   }
 `;
 
@@ -49,6 +53,10 @@ export const IamDeveloper = styled.p`
   @media (max-width: 768px) {
     width: 10em;
     font-size: 25px;
+  }
+  @media (min-width: 768px) {
+    width: 10em;
+    font-size: 48px;
   }
 
   span {
@@ -65,11 +73,22 @@ export const MyDescription = styled.p`
   font-weight: 300;
   line-height: normal;
   margin-bottom: 2em;
-  margin-top: 1em;
 
   @media (max-width: 768px) {
     width: 16em;
     font-size: 22px;
+
+    p {
+      display: none;
+    }
+  }
+  @media (min-width: 768px) {
+    width: 30em;
+    font-size: 22px;
+
+    p {
+      display: none;
+    }
   }
 `;
 

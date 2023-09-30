@@ -12,6 +12,10 @@ export const Container = styled.div`
 export const DivLetters = styled.div`
   display: flex;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    margin-top: 2em;
+  }
 `;
 
 export const LettersAnimated = styled.p`
@@ -19,14 +23,22 @@ export const LettersAnimated = styled.p`
   margin-right: 10px;
   font-size: 37px;
   font-weight: 300;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
+  @media (min-width: 768px) {
+    font-size: 37px;
+  }
 `;
 
 export const CarouselStyled = styled(Carousel)``;
 
 export const StyledSlide = styled.div`
-  padding: 3em;
+  padding: 2em;
   display: flex;
   justify-content: space-around;
+
   h2,
   p {
     font-weight: 300;
@@ -37,18 +49,22 @@ export const StyledSlide = styled.div`
     margin-top: 2em;
     border-radius: 21px;
   }
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const ProjectInfo = styled.div`
   text-align: left;
-  width: 40%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 1em;
 
-  p {
-    font-size: 1.3rem;
-    word-spacing: 5px;
+  @media (max-width: 768px) {
+    width: 100%;
   }
 
   div {
@@ -57,11 +73,26 @@ export const ProjectInfo = styled.div`
   }
 `;
 
+export const DescInfo = styled.p`
+  word-spacing: 5px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    font-size: 16px;
+  }
+  @media (min-width: 768px) {
+    font-size: 24px;
+    width: 80%;
+  }
+`;
+
 export const TechStackCard = styled.div`
   padding: 0.5rem;
   background-color: #1d84b5;
   border-radius: 3px;
 `;
+
+export const TechContainer = styled.div``;
 
 export const ImageContainer = styled.div`
   img {
@@ -77,6 +108,14 @@ export const Title = styled.div`
   font-weight: 300;
   font-size: 37px;
   color: #1d84b5;
+
+  @media (max-width: 768px) {
+    font-size: 28px;
+    width: 10em;
+  }
+  @media (min-width: 768px) {
+    font-size: 37px;
+  }
 `;
 
 export const Github = styled(Link)`
@@ -84,10 +123,4 @@ export const Github = styled(Link)`
   margin-left: 1rem;
 `;
 
-export const ButtonStyled = styled.div`
-  div {
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-  }
-`;
+export const ButtonStyled = styled.div``;

@@ -8,6 +8,7 @@ import {
   Input,
   LetsTalk,
   SocialWebIcons,
+  InputField,
 } from "./styles";
 import { FadeImg } from "../../styles/globalStyles";
 import { Navbar } from "../../components/NavBar";
@@ -40,10 +41,10 @@ export function Contato() {
       )
       .then(
         () => {
-          alert("Message sent successfully");
+          alert("Mensagem enviada com sucesso!");
         },
         () => {
-          alert("Failed to send, please try again later!");
+          alert("Falha no envio, tente novamente!");
         }
       );
   };
@@ -60,9 +61,8 @@ export function Contato() {
         >
           <LetsTalk>
             <h1>
-              Vamos{" "}
               <span>
-                <AnimationType />
+                <span>Vamos</span> <AnimationType />
               </span>
             </h1>
             <p>
@@ -70,28 +70,32 @@ export function Contato() {
               lhe responder
             </p>
             <SocialWebIcons>
-              <WebIconText
-                icon={FaLinkedin}
-                socialWebName={"Linkedin"}
-                socialWebNickName={"Luiz Paulo Barbosa"}
-                path={"https://www.linkedin.com/in/paulobarbosacode/"}
-              />
-              <WebIconText
-                icon={FaGithub}
-                socialWebName={"GitHub"}
-                socialWebNickName={"Paulo Barbosa"}
-                path={"https://github.com/BarveraDev"}
-              />
-              <WebIconText
-                icon={FaWhatsapp}
-                socialWebName={"WhatsApp"}
-                socialWebNickName={"(84) 99161-5970"}
-                path={"https://encurtador.com.br/giKX0"}
-              />
-              <WebIconText
-                icon={FaFileDownload}
-                socialWebName={"Veja meu curriculo"}
-              />
+              <div>
+                <WebIconText
+                  icon={FaLinkedin}
+                  socialWebName={"Linkedin"}
+                  socialWebNickName={"Luiz Paulo Barbosa"}
+                  path={"https://www.linkedin.com/in/paulobarbosacode/"}
+                />
+                <WebIconText
+                  icon={FaGithub}
+                  socialWebName={"GitHub"}
+                  socialWebNickName={"Paulo Barbosa"}
+                  path={"https://github.com/BarveraDev"}
+                />
+              </div>
+              <div>
+                <WebIconText
+                  icon={FaWhatsapp}
+                  socialWebName={"WhatsApp"}
+                  socialWebNickName={"(84) 99161-5970"}
+                  path={"https://encurtador.com.br/giKX0"}
+                />
+                <WebIconText
+                  icon={FaFileDownload}
+                  socialWebName={"Meu curriculo"}
+                />
+              </div>
             </SocialWebIcons>
           </LetsTalk>
         </LeftSideContainer>
@@ -103,7 +107,7 @@ export function Contato() {
           ref={refForm}
           onSubmit={sendEmail}
         >
-          <div>
+          <InputField>
             <Input type="text" placeholder="Seu nome" name="name" required />
             <Input
               type="email"
@@ -111,8 +115,10 @@ export function Contato() {
               name="email"
               required
             />
-          </div>
+          </InputField>
+
           <Input type="text" placeholder="Assunto" name="subject" required />
+
           <textarea
             name="message"
             id=""

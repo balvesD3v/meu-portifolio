@@ -13,6 +13,14 @@ export const SkillCard = styled.div`
   h4 {
     font-weight: 300;
   }
+  @media (max-width: 768px) {
+    width: 160px;
+    height: 160px;
+
+    h4 {
+      font-size: 12px;
+    }
+  }
 `;
 
 export const IconContainer = styled.div`

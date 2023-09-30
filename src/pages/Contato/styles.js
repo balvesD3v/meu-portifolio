@@ -5,11 +5,21 @@ export const Container = styled.div`
   justify-content: space-around;
   min-height: calc(100vh - 5em);
   align-items: center;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+  }
 `;
 
 export const LeftSideContainer = styled.div`
   img {
     width: 30em;
+  }
+
+  @media (max-width: 768px) {
+    padding: 2em;
   }
 `;
 
@@ -19,11 +29,6 @@ export const RightSideContainer = styled.form`
   flex-direction: column;
   gap: 0.5rem;
 
-  div {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0.5rem;
-  }
   textarea {
     background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -35,10 +40,15 @@ export const RightSideContainer = styled.form`
     color: #fff;
     height: 15em;
     font-weight: 300;
-
     &::placeholder {
       color: #ccc;
     }
+    @media (max-width: 768px) {
+      height: 9em;
+    }
+  }
+  @media (max-width: 768px) {
+    margin-top: -5em;
   }
 `;
 
@@ -52,8 +62,21 @@ export const Input = styled.input`
   padding: 1em;
   color: #fff;
   font-weight: 300;
+  @media (max-width: 768px) {
+    display: flex;
+  }
   &::placeholder {
     color: #ccc;
+  }
+`;
+
+export const InputField = styled.div`
+  @media (max-width: 768px) {
+    display: flex;
+    gap: 0.5em;
+    input {
+      width: 10em;
+    }
   }
 `;
 
@@ -77,10 +100,24 @@ export const Button = styled.button`
 export const LetsTalk = styled.div`
   h1 {
     font-weight: 300;
+
+    @media (max-width: 768px) {
+      font-size: 25px;
+      display: flex;
+      justify-content: center;
+    }
   }
   p {
     font-weight: 300;
-    margin-bottom: 2em;
+    width: 100%;
+
+    @media (max-width: 768px) {
+      padding: 2em;
+    }
+    @media (min-width: 768px) {
+      text-align: center;
+      margin-bottom: 4em;
+    }
   }
 
   span {
@@ -91,6 +128,24 @@ export const LetsTalk = styled.div`
 export const SocialWebIcons = styled.div`
   display: flex;
   flex-direction: column;
-  height: 20em;
-  gap: 2em;
+  align-items: center;
+  gap: 1em;
+
+  @media (max-width: 768px) {
+    div {
+      display: flex;
+    }
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (min-width: 769px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
