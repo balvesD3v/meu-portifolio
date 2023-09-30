@@ -84,11 +84,10 @@ export function Sobre() {
             Eu sou um programador frontend, procurando me desafiar e me
             aventurar em projetos. Sempre fui apaixonado pelo mundo do T.I,
             sempre me dedicando em aprender coisas novas e entregar não apenas
-            projetos mas experiências enriquecidas de paixão e códigos Eu sou um
-            programador frontend, procurando me desafiar e me aventurar em
-            projetos. Sempre fui apaixonado pelo mundo do T.I, sempre me
-            dedicando em aprender coisas novas e entregar não apenas projetos
-            mas experiências enriquecidas de paixão e códigos
+            projetos mas experiências enriquecidas de paixão e códigos. Criando
+            meus projetos com React e Styled-Components, mas também não deixo de
+            estudar o Back-End com NodeJS, e também C#. Apaixonado também por
+            video-games e JavaScript.
           </AboutMe>
         </ContainerInfo>
         <FadeImg

@@ -48,6 +48,7 @@ export const ContainerInfo = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
+    text-align: center;
   }
 `;
 

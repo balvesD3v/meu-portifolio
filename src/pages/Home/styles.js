@@ -9,7 +9,6 @@ export const ContentContainer = styled.div`
 
   min-height: calc(100vh - 5em);
   align-items: center;
-
   .fadeimgRight {
     max-width: 100%;
     height: auto;
@@ -17,6 +16,10 @@ export const ContentContainer = styled.div`
 
   @media (max-width: 768px) {
     justify-content: space-between;
+    .fadeimgTop {
+      display: none;
+      height: 50em;
+    }
   }
 `;
 
