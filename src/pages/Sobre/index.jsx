@@ -10,14 +10,17 @@ import {
 import { AnimationType } from "../../components/AnimationType/aboutIndex";
 import { FadeImg } from "../../styles/globalStyles";
 import { fadeInRightVariant } from "../../utils/Variants";
-import LeftFadeImg from "../../assets/left.png";
 import { TechCards } from "../../components/TechCards";
 import { FaReact, FaJs, FaNodeJs } from "react-icons/fa";
 import { SiStyledcomponents } from "react-icons/si";
+import { NavBar } from "../../components/NavBar";
+import TopFadeImg from "../../assets/top.png";
+import LeftFadeImg from "../../assets/left.png";
 
 export function Sobre() {
   return (
     <div>
+      <NavBar />
       <Container>
         <SkillsTechs>
           <motion.div
@@ -88,20 +91,35 @@ export function Sobre() {
             mas experiências enriquecidas de paixão e códigos
           </AboutMe>
         </ContainerInfo>
+        <FadeImg
+          src={TopFadeImg}
+          top={0}
+          as={motion.img}
+          animate={{
+            x: [0, 500, 0],
+          }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+          }}
+          className="fadeimgTop"
+        />
+        <FadeImg
+          src={LeftFadeImg}
+          top={0}
+          left={0}
+          as={motion.img}
+          animate={{
+            y: [0, 0, 0],
+            x: [0, 0, 0],
+          }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+          }}
+          className="fadeimgRight"
+        />
       </Container>
-      <FadeImg
-        src={LeftFadeImg}
-        top={0}
-        as={motion.img}
-        animate={{
-          y: [-100, -300, -100],
-        }}
-        transition={{
-          duration: 3,
-          repeat: Infinity,
-        }}
-        className="fadeimgRight"
-      />
     </div>
   );
 }

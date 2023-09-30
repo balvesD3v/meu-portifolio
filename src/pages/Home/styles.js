@@ -17,10 +17,6 @@ export const ContentContainer = styled.div`
 
   @media (max-width: 768px) {
     justify-content: space-between;
-    .fadeimgTop {
-      display: none;
-      height: 50em;
-    }
   }
 `;
 

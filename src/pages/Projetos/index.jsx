@@ -23,10 +23,12 @@ import LeftFadeImg from "../../assets/left.png";
 import { FadeImg } from "../../styles/globalStyles";
 import { fadeInLeftVariant, fadeInRightVariant } from "../../utils/Variants";
 import { Button } from "../../components/Button";
+import { NavBar } from "../../components/NavBar";
 
 export function Projetos() {
   return (
     <motion.div>
+      <NavBar />
       <Container>
         <DivLetters>
           <LettersAnimated>Meus</LettersAnimated>

@@ -7,11 +7,20 @@ export const Container = styled.div`
   align-items: center;
   overflow: hidden;
 
+  .fadeimgRight {
+    max-width: 100%;
+    height: auto;
+  }
+
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
     gap: 5em;
     height: 100vh;
+    .fadeimgTop {
+      display: none;
+      height: 50em;
+    }
   }
 `;
 

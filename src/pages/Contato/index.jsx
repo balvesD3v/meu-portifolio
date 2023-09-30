@@ -21,8 +21,10 @@ import {
   FaWhatsapp,
   FaFileDownload,
 } from "react-icons/fa";
+import { NavBar } from "../../components/NavBar";
 
 import TopFadeImg from "../../assets/top.png";
+import LeftFadeImg from "../../assets/left.png";
 
 export function Contato() {
   const refForm = useRef();
@@ -50,6 +52,7 @@ export function Contato() {
 
   return (
     <motion.div>
+      <NavBar />
       <Container>
         <LeftSideContainer
           as={motion.div}
@@ -130,13 +133,28 @@ export function Contato() {
           top={0}
           as={motion.img}
           animate={{
-            x: [0, 0, 0],
+            x: [0, 500, 0],
           }}
           transition={{
             duration: 10,
             repeat: Infinity,
           }}
           className="fadeimgTop"
+        />
+        <FadeImg
+          src={LeftFadeImg}
+          top={0}
+          left={0}
+          as={motion.img}
+          animate={{
+            y: [0, 0, 0],
+            x: [0, 0, 0],
+          }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+          }}
+          className="fadeimgRight"
         />
       </Container>
     </motion.div>
