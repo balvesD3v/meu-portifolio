@@ -21,14 +21,12 @@ import { FaGithub } from "react-icons/fa";
 import TopFadeImg from "../../assets/top.png";
 import LeftFadeImg from "../../assets/left.png";
 import { FadeImg } from "../../styles/globalStyles";
-import { Navbar } from "../../components/NavBar";
 import { fadeInLeftVariant, fadeInRightVariant } from "../../utils/Variants";
 import { Button } from "../../components/Button";
 
 export function Projetos() {
   return (
     <motion.div>
-      <Navbar />
       <Container>
         <DivLetters>
           <LettersAnimated>Meus</LettersAnimated>
@@ -42,19 +40,19 @@ export function Projetos() {
             showArrows={true}
             showStatus={false}
             showThumbs={false}
-            infiniteLoop={true}
+            infiniteLoop={false}
             useKeyboardArrows={true}
+            swipeable={true}
           >
             {projectsDetails.map((project) => (
               <StyledSlide>
-                <ProjectInfo
-                  key={project.id}
-                  as={motion.div}
-                  variants={fadeInLeftVariant}
-                  initial="hidden"
-                  whileInView="visible"
-                >
-                  <Title>
+                <ProjectInfo key={project.id}>
+                  <Title
+                    as={motion.div}
+                    variants={fadeInLeftVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                  >
                     {project.projectName}
                     <Github to={project.projectGithub} target="_blank">
                       <FaGithub />
@@ -92,28 +90,13 @@ export function Projetos() {
           top={0}
           as={motion.img}
           animate={{
-            x: [0, 500, 0],
-          }}
-          transition={{
-            duration: 10,
-            repeat: Infinity,
-          }}
-          className="fadeimgTop"
-        />
-        <FadeImg
-          src={LeftFadeImg}
-          top={0}
-          left={0}
-          as={motion.img}
-          animate={{
-            y: [0, 0, 0],
             x: [0, 0, 0],
           }}
           transition={{
             duration: 10,
             repeat: Infinity,
           }}
-          className="fadeimgRight"
+          className="fadeimgTop"
         />
       </Container>
     </motion.div>

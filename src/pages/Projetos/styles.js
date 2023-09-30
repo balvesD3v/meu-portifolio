@@ -5,31 +5,20 @@ import { Link } from "react-router-dom";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 10vh);
+  min-height: 100vh;
   justify-content: center;
-  overflow: hidden;
+  overflow-y: auto;
+  margin-top: -5em;
 
-  .fadeimgRight {
+  .fadeimgTop {
     max-width: 100%;
     height: auto;
-  }
-
-  @media (max-width: 768px) {
-    justify-content: space-between;
-    .fadeimgTop {
-      display: none;
-      height: 50em;
-    }
   }
 `;
 
 export const DivLetters = styled.div`
   display: flex;
   justify-content: center;
-
-  @media (max-width: 768px) {
-    margin-top: 2em;
-  }
 `;
 
 export const LettersAnimated = styled.p`
@@ -39,64 +28,57 @@ export const LettersAnimated = styled.p`
   font-weight: 300;
 
   @media (max-width: 768px) {
-    font-size: 24px;
+    font-size: 25px;
   }
   @media (min-width: 768px) {
     font-size: 37px;
   }
 `;
 
-export const CarouselStyled = styled(Carousel)``;
+export const CarouselStyled = styled(Carousel)`
+  display: flex;
+`;
 
 export const StyledSlide = styled.div`
-  padding: 2em;
+  padding: 5em;
   display: flex;
   justify-content: space-around;
-
   h2,
   p {
     font-weight: 300;
   }
   img {
     object-fit: contain;
-    height: 20em;
+    max-height: 20em;
     margin-top: 2em;
     border-radius: 21px;
   }
 
   @media (max-width: 768px) {
-    display: flex;
     flex-direction: column;
+    padding: 2em;
   }
 `;
 
 export const ProjectInfo = styled.div`
   text-align: left;
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 2em;
+  margin-right: 2em;
 
   @media (max-width: 768px) {
-    width: 100%;
-  }
-
-  div {
-    display: inline-block;
-    margin-right: 1em;
+    margin-right: 0;
   }
 `;
 
 export const DescInfo = styled.p`
   word-spacing: 5px;
+  width: 100%;
 
   @media (max-width: 768px) {
-    width: 100%;
-    font-size: 16px;
-  }
-  @media (min-width: 768px) {
-    font-size: 24px;
-    width: 80%;
+    text-align: center;
   }
 `;
 
@@ -106,29 +88,35 @@ export const TechStackCard = styled.div`
   border-radius: 3px;
 `;
 
-export const TechContainer = styled.div``;
+export const TechContainer = styled.div`
+  display: flex;
+  gap: 1em;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+`;
 
 export const ImageContainer = styled.div`
-  img {
-    margin-bottom: 5em;
-    border-radius: 10px;
+  width: 100em;
+
+  @media (max-width: 768px) {
+    width: 100%;
   }
 `;
 
 export const Title = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
   font-weight: 300;
   font-size: 37px;
   color: #1d84b5;
 
   @media (max-width: 768px) {
-    font-size: 28px;
-    width: 10em;
-  }
-  @media (min-width: 768px) {
-    font-size: 37px;
+    font-size: 25px;
+    justify-content: center;
   }
 `;
 
@@ -137,4 +125,11 @@ export const Github = styled(Link)`
   margin-left: 1rem;
 `;
 
-export const ButtonStyled = styled.div``;
+export const ButtonStyled = styled.div`
+  width: 100%;
+
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+`;
