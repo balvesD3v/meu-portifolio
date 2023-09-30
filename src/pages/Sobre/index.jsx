@@ -102,6 +102,7 @@ export function Sobre() {
           duration: 3,
           repeat: Infinity,
         }}
+        className="fadeimgRight"
       />
     </div>
   );

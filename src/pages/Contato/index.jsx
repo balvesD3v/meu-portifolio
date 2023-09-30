@@ -127,19 +127,20 @@ export function Contato() {
           ></textarea>
           <Button type="submit">Enviar</Button>
         </RightSideContainer>
+        <FadeImg
+          src={TopFadeImg}
+          top={0}
+          as={motion.img}
+          animate={{
+            x: [0, 500, 0],
+          }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+          }}
+          className="fadeimgTop"
+        />
       </Container>
-      <FadeImg
-        src={TopFadeImg}
-        top={0}
-        as={motion.img}
-        animate={{
-          x: [0, 500, 0],
-        }}
-        transition={{
-          duration: 10,
-          repeat: Infinity,
-        }}
-      />
     </motion.div>
   );
 }

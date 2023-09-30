@@ -7,6 +7,12 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-around;
 
+  overflow: hidden;
+  .fadeimgRight {
+    max-width: 100%;
+    height: auto;
+  }
+
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -17,7 +23,6 @@ export const SkillsTechs = styled.div`
   display: grid;
   grid-template-columns: auto auto;
   grid-gap: 2rem;
-  padding: 0 0;
 `;
 
 export const SkillCard = styled.div`
@@ -35,8 +40,12 @@ export const SkillCard = styled.div`
   }
 `;
 export const ContainerInfo = styled.div`
-  width: 100%;
+  width: 50%;
   margin: 2em 4em;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const AboutMe = styled.span`

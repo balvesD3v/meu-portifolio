@@ -7,6 +7,20 @@ export const Container = styled.div`
   flex-direction: column;
   min-height: calc(100vh - 10vh);
   justify-content: center;
+  overflow: hidden;
+
+  .fadeimgRight {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    justify-content: space-between;
+    .fadeimgTop {
+      display: none;
+      height: 50em;
+    }
+  }
 `;
 
 export const DivLetters = styled.div`

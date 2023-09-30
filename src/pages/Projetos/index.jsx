@@ -87,31 +87,35 @@ export function Projetos() {
             ))}
           </CarouselStyled>
         </div>
+        <FadeImg
+          src={TopFadeImg}
+          top={0}
+          as={motion.img}
+          animate={{
+            x: [0, 500, 0],
+          }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+          }}
+          className="fadeimgTop"
+        />
+        <FadeImg
+          src={LeftFadeImg}
+          top={0}
+          left={0}
+          as={motion.img}
+          animate={{
+            y: [0, 0, 0],
+            x: [0, 0, 0],
+          }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+          }}
+          className="fadeimgRight"
+        />
       </Container>
-      <FadeImg
-        src={LeftFadeImg}
-        top={0}
-        as={motion.img}
-        animate={{
-          y: [-100, -300, -100],
-        }}
-        transition={{
-          duration: 8,
-          repeat: Infinity,
-        }}
-      />
-      <FadeImg
-        src={TopFadeImg}
-        top={0}
-        as={motion.img}
-        animate={{
-          x: [0, 500, 0],
-        }}
-        transition={{
-          duration: 10,
-          repeat: Infinity,
-        }}
-      />
     </motion.div>
   );
 }
