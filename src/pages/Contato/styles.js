@@ -3,18 +3,14 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   justify-content: space-around;
-  height: 100vh;
+  height: calc(100vh + 10vh);
   align-items: center;
-  margin-bottom: 10em;
+  overflow: hidden;
 
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
     gap: 5em;
-
-    .fadeimgTop {
-      display: none;
-    }
   }
 `;
 
@@ -53,7 +49,7 @@ export const RightSideContainer = styled.form`
     }
   }
   @media (max-width: 768px) {
-    margin-top: -5em;
+    margin-top: -13em;
   }
 `;
 
@@ -117,6 +113,7 @@ export const LetsTalk = styled.div`
     width: 100%;
 
     @media (max-width: 768px) {
+      text-align: center;
       padding: 2em;
     }
     @media (min-width: 768px) {

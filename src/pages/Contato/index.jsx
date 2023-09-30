@@ -132,7 +132,7 @@ export function Contato() {
           top={0}
           as={motion.img}
           animate={{
-            x: [0, 500, 0],
+            x: [0, 0, 0],
           }}
           transition={{
             duration: 10,
