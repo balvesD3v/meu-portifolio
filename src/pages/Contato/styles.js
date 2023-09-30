@@ -17,6 +17,7 @@ export const Container = styled.div`
     flex-direction: column;
     gap: 5em;
     height: 100vh;
+    margin-top: -5em;
     .fadeimgTop {
       display: none;
       height: 50em;

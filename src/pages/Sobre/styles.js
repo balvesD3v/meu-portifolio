@@ -6,7 +6,7 @@ export const Container = styled.div`
   min-height: calc(100vh - 10vh);
   align-items: center;
   justify-content: space-around;
-  overflow: hidden;
+
   .fadeimgRight {
     max-width: 100%;
     height: auto;
