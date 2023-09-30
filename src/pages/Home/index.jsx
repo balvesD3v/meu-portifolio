@@ -76,7 +76,7 @@ export function Home() {
           <IamDeveloper as={motion.p}>
             Sou um <AnimationType />
           </IamDeveloper>
-
+          <Navbar />
           <MyDescription>
             Sou um desenvolvedor frontEnd, e futuro desenvolvedor full-stack.
             Buscando a oportunidade que me for concedida e sempre procurando
