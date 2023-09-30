@@ -87,7 +87,7 @@ export function Sobre() {
             projetos mas experiências enriquecidas de paixão e códigos. Criando
             meus projetos com React e Styled-Components, mas também não deixo de
             estudar o Back-End com NodeJS, e também C#. Apaixonado também por
-            video-games e JavaScript.
+            video-games e por minha esposa.
           </AboutMe>
         </ContainerInfo>
         <FadeImg
