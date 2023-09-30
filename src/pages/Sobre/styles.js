@@ -54,6 +54,10 @@ export const AboutMe = styled.span`
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
 `;
 
 export const AnimatedAbout = styled.p`
