@@ -18,6 +18,12 @@ import { AnimatedLetters } from "../../components/AnimatedLetters";
 import { FadeImg } from "../../styles/globalStyles";
 import { fadeInLeftVariant, fadeInRightVariant } from "../../utils/Variants";
 
+import reactIcon from "../../assets/react-javascript-js-framework-facebook-svgrepo-com.svg";
+import JSIcon from "../../assets/javascript-svgrepo-com.svg";
+import cssIcon from "../../assets/css-3-svgrepo-com.svg";
+import htmlIcon from "../../assets/html-5-svgrepo-com.svg";
+import TSIcon from "../../assets/typescript-svgrepo-com.svg";
+
 import TopFadeImg from "../../assets/top.png";
 import LeftFadeImg from "../../assets/left.png";
 
@@ -116,7 +122,7 @@ export function Home() {
               duration: 8,
               repeat: Infinity,
             }}
-            src={ParticlesSvg}
+            src={reactIcon}
             top="-80px"
             left="200px"
             rotate="10deg"
@@ -126,14 +132,14 @@ export function Home() {
             drag
             animate={{
               x: [20, 120, 20],
-              rotate: [180, 360, 180],
+              rotate: [360, 180, 360],
               scale: [1, 0.5, 1],
             }}
             transition={{
               duration: 8,
               repeat: Infinity,
             }}
-            src={ParticlesSvg}
+            src={JSIcon}
             top="-80px"
             left="20px"
             rotate="270deg"
@@ -150,7 +156,7 @@ export function Home() {
               duration: 5,
               repeat: Infinity,
             }}
-            src={ParticlesSvg}
+            src={cssIcon}
             top="75px"
             right="-70px"
             rotate="50deg"
@@ -167,7 +173,7 @@ export function Home() {
               duration: 7,
               repeat: Infinity,
             }}
-            src={ParticlesSvg}
+            src={htmlIcon}
             bottom="75px"
             left="-70px"
             rotate="53deg"
@@ -185,7 +191,7 @@ export function Home() {
               duration: 10,
               repeat: Infinity,
             }}
-            src={ParticlesSvg}
+            src={TSIcon}
             bottom="-20px"
             right="30px"
             rotate="50deg"

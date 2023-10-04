@@ -143,4 +143,5 @@ export const Particle = styled.img`
   right: ${({ right }) => right};
   bottom: ${({ bottom }) => bottom};
   transform: rotate(${({ rotate }) => rotate});
+  width: 90px;
 `;

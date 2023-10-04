@@ -82,7 +82,7 @@ export function Contato() {
                   icon={FaGithub}
                   socialWebName={"GitHub"}
                   socialWebNickName={"Paulo Barbosa"}
-                  path={"https://github.com/BarveraDev"}
+                  path={"https://github.com/balvesD3v"}
                 />
               </div>
               <div>
